@@ -35,8 +35,11 @@ a:hover,a:active{
 #main_content{
 	width:710px;
 	padding: 20px;
-	float:right;
+	float:left;
 	min-height:410px;
+}
+div.no_menu#main_content{
+	width:910px;
 }
 #footer{
 	clear:both;
@@ -49,6 +52,7 @@ a:hover,a:active{
 
 div#header h1{
 	font-size:36px;
+	margin:5px;
 }
 
 /* End header */
@@ -117,6 +121,10 @@ div#local_menu ul li a:hover{
 div#main_content h2{
 	font-size:200%;
 }
+div#main_content p{
+	line-height: 150%;
+	margin: 8px 15px;
+}
 
 /* Start main content */
 
@@ -129,7 +137,7 @@ div#main_content h2{
 	text-align:left;
 }
 #designed_for{
-	width:40%;
+	width:50%;
 	float:right;
 	margin: 20px 10px auto auto;
 	text-align:right;
