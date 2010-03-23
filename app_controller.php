@@ -31,5 +31,11 @@
  * @subpackage    cake.app
  */
 class AppController extends Controller {
+    public $menu = false;
+    public $helpers = array('Html','Form','Javascript');
+    public function beforeRender(){
+        $this->set("menu",$this->menu);
+        $this->set("name",$this->params['controller']);
+    }
 }
 ?>

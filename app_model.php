@@ -31,5 +31,9 @@
  * @subpackage    cake.app
  */
 class AppModel extends Model {
+    function __construct($id = false, $table = null, $ds = null) {
+        $this->useDbConfig = str_replace('.','_',$_SERVER['HTTP_HOST']);
+        parent::__construct($id, $table, $ds);
+  }
 }
 ?>

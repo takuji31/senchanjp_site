@@ -1,59 +1,44 @@
-<?php
-/**
- *
- * PHP versions 4 and 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright 2005-2009, Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright 2005-2009, Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       cake
- * @subpackage    cake.cake.console.libs.templates.skel.views.layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php __('CakePHP: the rapid development php framework:'); ?>
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $scripts_for_layout;
-	?>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="ja" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="keywords" content="Senchan.jp,php,cakephp,mobile,perl,wassr,Wasatter,Twitter" />
+<meta name="author" content="Senchan" />
+<meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
+<meta name="description" content="Senchan.jp" />
+<title><?= $title_for_layout ?> | Senchan.jp</title>
+<?= $html->css("main") ?>
+<?= $html->css("reset") ?>
+<?= $javascript->link("jquery") ?>
+<?= $javascript->link("menu") ?>
+<?= $javascript->link("wordBreak") ?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link(__('CakePHP: the rapid development php framework', true), 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $content_for_layout; ?>
-
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt'=> __('CakePHP: the rapid development php framework', true), 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
+<div id="wrapper">
+  <div id="header">
+    <h1>Senchan.jp</h1>
+  </div>
+  <div id="global_menu">
+    <ul>
+      <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
+      <li><?= $html->link('Blog','/blog/',array('title'=>'Blog')) ?></li>
+      <li><?= $html->link('Wasatter','/wasatter/',array('title'=>'Wasatter')) ?></li>
+      <li><?= $html->link('About','/about/',array('title'=>'About')) ?></li>
+      <li><?= $html->link('Link','/link/',array('title'=>'Link')) ?></li>
+      <li><a href="http://byaa.jp/" title="byaa.jp" class="blank">byaa.jp</a></li>
+    </ul>
+  </div>
+  <? if($menu) print $this->element("menus/".$name); ?>
+  <div id="main_content" <? if(!$menu){?>class="no_menu"<? } ?>>
+    <?= $content_for_layout ?>
+  </div>
+  <div id="footer">
+    <p id="copy_right" class="float_margin_bugfix">&copy; 2010 Senchan all rights reserved</p>
+    <p id="designed_for">Designed for Safari4,Firefox3.5,InternerExplorer8 and GoogleChrome</p>
+  </div>
+</div>
 </body>
 </html>
