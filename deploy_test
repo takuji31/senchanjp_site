@@ -1,0 +1,2 @@
+#!/bin/zsh
+rsync -avC ./ senchan@senchan.jp:~/public_html/test.senchan.jp/
