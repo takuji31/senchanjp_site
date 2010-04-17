@@ -1,9 +1,9 @@
    <div id="local_menu">
     	<h2>Wasatter</h2>
         <ul>
-            <li><a href="" title="About Wasatter">About</a></li>
-            <li><a href="" title="Download Wasatter">Download</a></li>
-            <li><a href="" title="Wasatter support page">Support</a></li>
-            <li><a href="" title="Wasatter manual page">Manual</a></li>
+            <li><?=$html->link('About','/wasatter/index',array('title'=>'About Wasatter'))?></li>
+            <li><?=$html->link('Download','/wasatter/download',array('title'=>'Download Wasatter'))?></li>
+            <li><?=$html->link('Support','/wasatter/support/index',array('title'=>'Wasatter support page'))?></li>
+            <li><?=$html->link('Manual','/wasatter/manual/index',array('title'=>'Wasatter manual page'))?></li>
         </ul>
     </div>

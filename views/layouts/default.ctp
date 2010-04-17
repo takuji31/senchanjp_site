@@ -5,11 +5,11 @@
 <meta http-equiv="Content-Language" content="ja" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta name="keywords" content="Senchan.jp,php,cakephp,mobile,perl,wassr,Wasatter,Twitter" />
+<meta name="keywords" content="Senchan.jp,php,cakephp,mobile,perl,wassr,Wasatter,Twitter,Senka,Senchan" />
 <meta name="author" content="Senchan" />
 <meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
 <meta name="description" content="Senchan.jp" />
-<title><?= $title_for_layout ?> | Senchan.jp</title>
+<title><?= $title_for_layout ?><?if(!empty($title_for_layout)) print" | "; ?>Senchan.jp</title>
 <?= $html->css("main") ?>
 <?= $html->css("reset") ?>
 <?= $javascript->link("jquery") ?>
@@ -24,10 +24,10 @@
   <div id="global_menu">
     <ul>
       <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
-      <li><?= $html->link('Blog','/blog/',array('title'=>'Blog')) ?></li>
-      <li><?= $html->link('Wasatter','/wasatter/',array('title'=>'Wasatter')) ?></li>
+      <li><?= $html->link('Blog','/articles/index',array('title'=>'Blog')) ?></li>
+      <li><?= $html->link('Wasatter','/wasatter/index',array('title'=>'Wasatter')) ?></li>
       <li><?= $html->link('About','/about/',array('title'=>'About')) ?></li>
-      <li><?= $html->link('Link','/link/',array('title'=>'Link')) ?></li>
+      <li><?= $html->link('Link','/links/index',array('title'=>'Link')) ?></li>
       <li><a href="http://byaa.jp/" title="byaa.jp" class="blank">byaa.jp</a></li>
     </ul>
   </div>
