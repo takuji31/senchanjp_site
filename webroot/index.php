@@ -50,7 +50,7 @@
  *
  */
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-		define('CAKE_CORE_INCLUDE_PATH',  '/virtual/senchan/cake');
+		define('CAKE_CORE_INCLUDE_PATH',  '/virtual/senchan/project/cake');
 	}
 
 /**
