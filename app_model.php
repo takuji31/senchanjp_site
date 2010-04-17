@@ -32,7 +32,9 @@
  */
 class AppModel extends Model {
     function __construct($id = false, $table = null, $ds = null) {
-        $this->useDbConfig = str_replace('.','_',$_SERVER['HTTP_HOST']);
+        $config = @$_SERVER['HTTP_HOST'];
+        $config = !($config)? "default":$config;
+        $this->useDbConfig = str_replace('.','_',$config);
         parent::__construct($id, $table, $ds);
   }
 }

@@ -8,6 +8,15 @@ class WasatterController extends AppController {
     public function index(){
         
     }
+    public function download(){
+
+    }
+    public function support(){
+
+    }
+    public function manual(){
+
+    }
     
     public function callback(){
         $token = @$this->params['url']['token'];
