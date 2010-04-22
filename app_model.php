@@ -31,11 +31,5 @@
  * @subpackage    cake.app
  */
 class AppModel extends Model {
-    function __construct($id = false, $table = null, $ds = null) {
-        $config = @$_SERVER['HTTP_HOST'];
-        $config = !($config)? "default":$config;
-        $this->useDbConfig = str_replace('.','_',$config);
-        parent::__construct($id, $table, $ds);
-  }
 }
 ?>
