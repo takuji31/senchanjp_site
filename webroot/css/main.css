@@ -14,11 +14,11 @@ a:hover,a:active{
 table{
 	width: 600px;
 	border-collapse: collapse;
-	border: 1px solid silver;
+	border:1px solid #005BA6;
 	margin:  30px;
 }
 th,td{
-	border: 1px solid silver;
+	border:1px solid #005BA6;
 	padding: 5px;
 }
 th{
@@ -103,7 +103,6 @@ div#local_menu h2{
 	width:173px;
 	line-height:2.5em;
 	padding-left:5px;
-	/*border:1px solid #005BA6;*/
 	border-bottom:1px solid #005BA6;
 	margin-top:20px;
 }
