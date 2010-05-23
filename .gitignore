@@ -1,0 +1,3 @@
+tmp/cache/persistent/*.*
+tmp/cache/models/*.*
+tmp/logs/*.*
