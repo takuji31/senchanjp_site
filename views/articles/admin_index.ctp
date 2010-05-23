@@ -4,11 +4,11 @@
 <table>
     <thead>
     <tr>
-        <td>Id</td>
-        <td>Title</td>
-        <td>Body</td>
-        <td>Created</td>
-        <td>Updated</td>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Body</th>
+        <th>Created</th>
+        <th>Updated</th>
     </tr>
     </thead>
     <tbody>

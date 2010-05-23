@@ -11,12 +11,24 @@ a:hover,a:active{
 	color:#FF4C00;
 	text-decoration:underline;
 }
+table{
+	width: 600px;
+	border-collapse: collapse;
+	border: 1px solid silver;
+	margin:  30px;
+}
+th,td{
+	border: 1px solid silver;
+	padding: 5px;
+}
+th{
+	font-weight: bold;
+}
 /* End basic styling */
 /* start wire-frame */
 #wrapper{
 	width:950px;
 	margin:0 20px;
-	/*kari*/
 }
 #header{
 	width:100%;
