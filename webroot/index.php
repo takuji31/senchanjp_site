@@ -50,7 +50,7 @@
  *
  */
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-		define('CAKE_CORE_INCLUDE_PATH',  dirname(dirname(dirname(dirname(__FILE__)))).'/project/cake');
+		define('CAKE_CORE_INCLUDE_PATH',  ROOT .'/cake');
 	}
 
 /**
