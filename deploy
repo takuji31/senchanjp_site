@@ -1,4 +1,0 @@
-#!/bin/zsh
-mv robot.txt robot.txt.bak
-rsync -avC ./ senchan@senchan.jp:~/public_html/senchan.jp/
-mv robot.txt.bak robot.txt
