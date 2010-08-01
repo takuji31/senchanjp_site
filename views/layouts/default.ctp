@@ -40,5 +40,6 @@
     <p id="designed_for">Designed for Safari4,Firefox3.5,InternerExplorer8 and GoogleChrome</p>
   </div>
 </div>
+<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>

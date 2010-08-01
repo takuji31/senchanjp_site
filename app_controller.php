@@ -33,6 +33,7 @@
 class AppController extends Controller {
     public $menu = false;
     public $helpers = array('Html','Form','Javascript');
+    public $components = array('DebugKit.Toolbar');
     public function beforeFilter(){
         if($this->params['prefix'] == 'admin'){
             $this->layout = 'admin';
