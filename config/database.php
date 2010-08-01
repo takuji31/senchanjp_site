@@ -1,7 +1,7 @@
 <?php
 class DATABASE_CONFIG {
 
-	var $dev = array(
+	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',

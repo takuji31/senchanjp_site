@@ -21,18 +21,6 @@
   <div id="header">
     <h1>Senchan.jp</h1>
   </div>
-  <? if(@$admin){ ?>
-  <div id="global_menu">
-    <ul>
-      <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
-      <li><?= $html->link('Blog','/articles/index',array('title'=>'Blog')) ?></li>
-      <li><?= $html->link('Wasatter','/wasatter/index',array('title'=>'Wasatter')) ?></li>
-      <li><?= $html->link('About','/about/',array('title'=>'About')) ?></li>
-      <li><?= $html->link('Link','/links/index',array('title'=>'Link')) ?></li>
-      <li><a href="http://byaa.jp/" title="byaa.jp" class="blank">byaa.jp</a></li>
-    </ul>
-  </div>
-  <? } ?>
   <div id="global_menu">
     <ul>
       <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
@@ -44,7 +32,7 @@
     </ul>
   </div>
   <? if($menu) print $this->element("menus/".$name); ?>
-  <div id="main_content" <? if(!$menu){?>class="no_menu"<? } ?>>
+  <div id="main_content" <? if(!$menu){?>class="no_menu"<? } ?> >
     <?= $content_for_layout ?>
   </div>
   <div id="footer">

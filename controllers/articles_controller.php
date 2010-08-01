@@ -3,7 +3,14 @@ class ArticlesController extends AppController {
 
 	public $name = 'Articles';
     public $helpers = array('Session','Form','Html','Javascript');
-    public $components = array('Wassr');
+    public $components = array('Senchan.Wassr','Auth');
+
+    public function beforeFilter(){
+        parent::beforeFilter();
+        $this->Auth->allow(
+            'index'
+            );
+    }
 
 	public function index() {
         $articles = $this->Article->find('all',array('order'=>'Article.id desc')) or array();
