@@ -37,7 +37,7 @@ class AppController extends Controller {
     public function beforeFilter(){
         $prefix = @$this->params['prefix'];
         if($prefix == 'admin'){
-            $this->layout = 'admin';
+            //$this->layout = 'admin';
         }
     }
     public function beforeRender(){

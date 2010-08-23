@@ -10,11 +10,18 @@
 <meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
 <meta name="description" content="Senchan.jp" />
 <title><?= $title_for_layout ?><?if(!empty($title_for_layout)) print" | "; ?>Senchan.jp</title>
-<?= $html->css("main") ?>
+<?= $html->css("cake.generic.part") ?>
+
 <?= $html->css("reset") ?>
+
+<?= $html->css("main") ?>
+
 <?= $javascript->link("jquery") ?>
+
 <?= $javascript->link("menu") ?>
+
 <?= $javascript->link("wordBreak") ?>
+
 </head>
 <body>
 <div id="wrapper">

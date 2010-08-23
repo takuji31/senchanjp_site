@@ -8,7 +8,8 @@ class ArticlesController extends AppController {
     public function beforeFilter(){
         parent::beforeFilter();
         $this->Auth->allow(
-            'index'
+            'index',
+            'show'
             );
     }
 
@@ -43,13 +44,5 @@ class ArticlesController extends AppController {
             $this->redirect('/admin/articles/');
             exit;
         }
-    }
-
-    public function admin_gps_test() {
-        $this->Wassr->setUserId('senchan_test');
-        $this->Wassr->setPassword('takuji');
-        $res = $this->Wassr->update_gps('GPSテスト','35.36.22.054','139.41.58.042','wgs84');
-        $this->Session->setFlash($res);
-        $this->redirect('/admin/articles/');
     }
 }
