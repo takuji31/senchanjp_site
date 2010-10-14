@@ -5,6 +5,9 @@
 <meta http-equiv="Content-Language" content="ja" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
 <meta name="keywords" content="Senchan.jp,php,cakephp,mobile,perl,wassr,Wasatter,Twitter,Senka,Senchan,Android" />
 <meta name="author" content="Senchan" />
 <meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
