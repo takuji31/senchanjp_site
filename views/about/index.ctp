@@ -13,7 +13,8 @@ Senchan.jpはSenchanが趣味で作ったWebサイトです。<br />
 <li>ゲーマー</li>
 <li>二次元より三次元に興味がある。</li>
 <li>PHPがメインのWeb屋さん、仕事はPerl</li>
-<li>最近はAndroidアプリを作るのにハマっている。</li>
+<li>最近はもっぱらPerl、でもこのサイトはPHP</li>
+<li>Androidアプリも作ってます。</li>
 </ul>
 <h3>Wassr</h3>
 <p><?=$html->link('@takuji31','http://wassr.jp/user/takuji31',array('class'=>'blank'))?></p>
