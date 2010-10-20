@@ -18,10 +18,8 @@ class WasatterController extends AppController {
 
     }
     
-    public function callback(){
-        $token = @$this->params['url']['token'];
-        print $token;
-        exit;
+    public function callback($platform){
+        $this->redirect("wasatter://oauth/$platform");
     }
 }
 ?>
