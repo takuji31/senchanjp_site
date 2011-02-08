@@ -14,8 +14,8 @@ class ArticlesController extends AppController {
     }
 
 	public function index() {
-        $articles = $this->Article->find('all',array('order'=>'Article.id desc')) or array();
-        $this->set('articles',$articles);
+        //$articles = $this->Article->find('all',array('order'=>'Article.id desc')) or array();
+        //$this->set('articles',$articles);
 	}
     
     /**
