@@ -32,7 +32,7 @@
  */
 class AppController extends Controller {
     public $menu = false;
-    public $helpers = array('Html','Form','Javascript');
+    public $helpers = array('Html','Form');
     public $components = array('Session','DebugKit.Toolbar');
     public function beforeFilter(){
         $prefix = @$this->params['prefix'];

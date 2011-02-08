@@ -13,17 +13,17 @@
 <meta name="copyright" content="&copy; 2010 Senchan all rights reserved" />
 <meta name="description" content="Senchan.jp" />
 <title><?= $title_for_layout ?><?if(!empty($title_for_layout)) print" | "; ?>Senchan.jp</title>
-<?= $html->css("cake.generic.part") ?>
+<?= $this->Html->css("cake.generic.part") ?>
 
-<?= $html->css("reset") ?>
+<?= $this->Html->css("reset") ?>
 
-<?= $html->css("main") ?>
+<?= $this->Html->css("main") ?>
 
-<?= $javascript->link("jquery") ?>
+<?= $this->Html->script("jquery") ?>
 
-<?= $javascript->link("menu") ?>
+<?= $this->Html->script("menu") ?>
 
-<?= $javascript->link("wordBreak") ?>
+<?= $this->Html->script("wordBreak") ?>
 
 </head>
 <body>
@@ -33,11 +33,11 @@
   </div>
   <div id="global_menu">
     <ul>
-      <li id="current"><?= $html->link("Top","/",array('title'=>'Top')) ?></li>
-      <li><?= $html->link('Blog','/articles/index',array('title'=>'Blog')) ?></li>
-      <li><?= $html->link('Wasatter','/wasatter/index',array('title'=>'Wasatter')) ?></li>
-      <li><?= $html->link('About','/about/',array('title'=>'About')) ?></li>
-      <li><?= $html->link('Link','/links/index',array('title'=>'Link')) ?></li>
+      <li id="current"><?= $this->Html->link("Top","/",array('title'=>'Top')) ?></li>
+      <li><?= $this->Html->link('Blog','/articles/index',array('title'=>'Blog')) ?></li>
+      <li><?= $this->Html->link('Wasatter','/wasatter/index',array('title'=>'Wasatter')) ?></li>
+      <li><?= $this->Html->link('About','/about/',array('title'=>'About')) ?></li>
+      <li><?= $this->Html->link('Link','/links/index',array('title'=>'Link')) ?></li>
       <li><a href="http://byaa.jp/" title="byaa.jp" class="blank">byaa.jp</a></li>
     </ul>
   </div>
